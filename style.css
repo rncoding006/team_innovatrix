@@ -1,0 +1,243 @@
+body {
+    background-color: rgb(68, 5, 5);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+.navbar {
+      background-color: #121212;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #00bcd4;
+      letter-spacing: 1px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .navbar ul li a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #00bcd4;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    .navbar ul li a:hover::after {
+      width: 100%;
+    }
+
+    .navbar ul li a:hover {
+      color: #00bcd4;
+    }
+
+    /* Responsive Menu */
+    @media screen and (max-width: 768px) {
+      .navbar ul {
+        display: none;
+      }
+
+      .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+h1 {
+    text-align: center;
+    color: aqua;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: aqua;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+}
+p.Home{
+    color: white;
+}
+p.coming{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+img.rudra {
+    height: 300px;
+    width: 300px;
+}
+img.Linkedin{
+    align-items: left;
+    height: 5px;
+    width: 5px; 
+    border: 5px;
+    
+}
+img.Github{
+    align-items: center;
+    height: 5px;
+    width: 5px;
+}
+img.sinchan{
+    height: 50px;
+;
+}
+div.Designation {
+    text-align: center;
+    color: aqua;
+}
+
+div.about {
+    color: white;
+    text-align: justify;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font: 30px;
+}
+
+/* contact us  */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .contact-container {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+
+  .contact-section p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background-color: #0097a7;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+    margin-top: 10px;
+  }
+
+  .contact-info a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  /* Meet the Team */
+  .team-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px; /* spacing between cards */
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.team-member {
+  flex: 1 1 300px;
+  border: 2px solid cyan;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  max-width: 400px;
+}
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Optional: icon zoom on hover */
+}
